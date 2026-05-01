@@ -1,26 +1,26 @@
 class CcShisa < Formula
   desc "Static-analysis PreToolUse hook for Claude Code's Bash tool"
   homepage "https://github.com/kbryy/cc-shisa"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kbryy/cc-shisa/releases/download/v#{version}/cc-shisa-darwin-arm64"
-      sha256 "e2aab956ce64378f9606b2c3d4d198960afed90d8f40f97796f2af5bc94155fe"
+      sha256 "06d939d394adb18dd7b04af65b2a6774a950fa8643d18ee6295a87abedf3df4c"
     else
       url "https://github.com/kbryy/cc-shisa/releases/download/v#{version}/cc-shisa-darwin-x64"
-      sha256 "ae698e895a084397698a027b6234271fc508b6b3ad026f84d035f8f39864212b"
+      sha256 "5834c04f8accd958e5f92d7a8173da3216d90d1d6ad5671cd5ae0b27568e1fd7"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/kbryy/cc-shisa/releases/download/v#{version}/cc-shisa-linux-arm64"
-      sha256 "f1c000de9c30ddb8d15cb7f48f791e250311eeab6cd578fd0633bbab6fbd72ad"
+      sha256 "e4f683ab66baa71f6a926a6fa2623d41cff53a41e13c225c9b73e61c0464282d"
     else
       url "https://github.com/kbryy/cc-shisa/releases/download/v#{version}/cc-shisa-linux-x64"
-      sha256 "b33206a0ab6c66b48d27aab650ccfaef67f632ab9257393204f5e4a453917f3f"
+      sha256 "8dc462793dc6b99a37681a4cba621cb1fbf73817f8bdd7813bc0a3c0d50aa27b"
     end
   end
 
