@@ -26,6 +26,7 @@ class CcShisa < Formula
 
   def install
     bin.install Dir["cc-shisa-*"].first => "cc-shisa"
+    chmod 0755, bin/"cc-shisa"
     generate_completions_from_executable(bin/"cc-shisa", "completion")
   end
 
